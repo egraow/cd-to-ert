@@ -10,7 +10,7 @@ Author: Pastures#0001 (@egraow)
     `=RAID_CD(A1, B1, C1)`
     `[ A1 == "1:12", B1 == "Yepdh", C1 == "Dark" ]`
     
-Output: 1:12 - |cffA330C9Yepdh|r - {spell:196718}
+Output: `1:12 - |cffA330C9Yepdh|r - {spell:196718}`
 
 - Expansion:
     - Create a new property in CD_IDS
