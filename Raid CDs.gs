@@ -145,8 +145,8 @@ function RAID_CD(timestamp, caster, spell) {
   
   ret += (timestamp + spacer);
   if (spellRef) ret += `${COLOR_PREFIX}${spellRef.class.color}`;
-  ret += `${caster}`;
-  if (spellRef) ret += `${COLOR_SUFFIX}`;
+  ret += caster;
+  if (spellRef) ret += COLOR_SUFFIX;
   ret += spacer;
   ret += (spellRef ? `{spell:${spellRef.id}}` : spell);
   
