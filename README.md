@@ -1,7 +1,7 @@
 # cd-to-ert
 ERT Cooldown Conversion
 
-Author: Pastures#0001 (@egraow) 
+Author: Pastures#0001 (https://twitter.com/egraow) 
 
 - Syntax: 
     `=RAID_CD(timestamp, caster, spell)`
