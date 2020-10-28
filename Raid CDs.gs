@@ -141,7 +141,7 @@ function RAID_CD(timestamp, caster, spell) {
   
   // step 1: insert timestamp
   // step 2: if spell exists, grab class color. if not, no format.
-  // step 3: if spell exists, if not, print spreadsheet's string.
+  // step 3: if spell exists, print ERT-compatible spell tag. if not, print spreadsheet's string.
   
   ret += (timestamp + spacer);
   if (spellRef) ret += `${COLOR_PREFIX}${spellRef.class.color}`;
