@@ -7,7 +7,7 @@ Author: Pastures#0001 (@egraow)
     `=RAID_CD(timestamp, caster, spell)`
  
 - Example:
-    `=RAID_CD(A1, B1, C1)`
+    `=RAID_CD(A1, B1, C1)`  
     `[ A1 == "1:12", B1 == "Yepdh", C1 == "Dark" ]`
     
 Output: `1:12 - |cffA330C9Yepdh|r - {spell:196718}`
