@@ -52,6 +52,9 @@ const CD_IDS = {
   "power word: barrier":  {id: 62618, class: CLASSES.priest},
   "vampiric embrace":     {id: 15286, class: CLASSES.priest},
   "holy word: salvation": {id: 265202, class: CLASSES.priest},
+  "evangelism":           {id: 246287, class: CLASSES.priest},
+  "rapture":              {id: 47536, class: CLASSES.priest},
+  "spirit shell":         {id: 109964, class: CLASSES.priest},
   
   // dks
   "anti-magic zone": {id: 51052, class: CLASSES.dk},
@@ -102,6 +105,15 @@ const CD_ALIASES = {
   "salvation":            CD_IDS["holy word: salvation"],
   "hws":                  CD_IDS["holy word: salvation"],
   "hw:s":                 CD_IDS["holy word: salvation"],
+  "spirit shell":         CD_IDS["spirit shell"],
+  "ss":                   CD_IDS["spirit shell"],
+  "shell":                CD_IDS["spirit shell"],
+  "evangelism":           CD_IDS["evangelism"],
+  "evang":                CD_IDS["evangelism"],
+  "evange":               CD_IDS["evangelism"],
+  "rapture":              CD_IDS["rapture"],
+  "rapt":                 CD_IDS["rapture"],
+  
   
   // dks
   "anti-magic zone": CD_IDS["anti-magic zone"],
@@ -141,12 +153,12 @@ function RAID_CD(timestamp, caster, spell) {
   
   // step 1: insert timestamp
   // step 2: if spell exists, grab class color. if not, no format.
-  // step 3: if spell exists, print ERT-compatible spell tag. if not, print spreadsheet's string.
+  // step 3: if spell exists, print ERT-compatible spell tag, if not, print spreadsheet's string.
   
   ret += (timestamp + spacer);
   if (spellRef) ret += `${COLOR_PREFIX}${spellRef.class.color}`;
-  ret += caster;
-  if (spellRef) ret += COLOR_SUFFIX;
+  ret += `${caster}`;
+  if (spellRef) ret += `${COLOR_SUFFIX}`;
   ret += spacer;
   ret += (spellRef ? `{spell:${spellRef.id}}` : spell);
   
